@@ -5,11 +5,11 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import 'reset-css';
 import App from './App';
 import MovieInfo from './components/MovieInfo'
-import {getMovies} from './store/actions';
+import {getInitialMovieList} from './store/actions';
 import * as serviceWorker from './serviceWorker';
 import store from './store/index';
 
-store.dispatch(getMovies());
+store.dispatch(getInitialMovieList());
 
 ReactDOM.render(
 	<Provider store={store}>

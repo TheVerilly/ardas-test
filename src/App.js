@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import MovieListContainer from './containers/MovieListContainer';
-import Search from './components/Search'
+import SearchContainer from './containers/SearchContainer'
 
 function App() {
 	return (
-		<div className="app">
-			<Search />
+		<div>
+			<SearchContainer />
 			<main>
 				<MovieListContainer />
 			</main>

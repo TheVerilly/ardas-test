@@ -15,8 +15,7 @@ function MovieCardDetails(props) {
 		<div className="movie-card__details">
 			<h4 className="details__title">{props.title}</h4>
 			<div className="details__metadata">
-				<span>Release date: {props.releaseDate}</span>
-				<Rating value={props.rating} />
+				<span>Release date: {props.releaseDate}</span> <Rating value={props.rating} />
 			</div>
 			<p className="details__overview">{limitOverview(props.overview)}</p>
 		</div>

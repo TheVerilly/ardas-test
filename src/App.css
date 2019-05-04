@@ -15,7 +15,9 @@ body {
 }
 
 main {
+	height: calc(100vh - 55px);
 	margin-top: 55px;
+	overflow: hidden;
 }
 
 input {

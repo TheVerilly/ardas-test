@@ -1,6 +1,7 @@
 .wrapp-search {
 	position: fixed;
 	top: 0;
+	height: 55px;
 	display: grid;
 	grid-template-columns: 1fr 100px 80px;
 	grid-column-gap: 20px;

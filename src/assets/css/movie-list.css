@@ -1,5 +1,11 @@
 .movie-list {
 	display: flex;
+	height: calc(100vh - 55px);
 	flex-wrap: wrap;
 	justify-content: center;
+	overflow: auto;
+}
+.movie-list__empty {
+	font-size: 2em;
+	margin-top: 20px;
 }

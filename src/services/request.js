@@ -2,12 +2,16 @@ const domain = 'https://api.themoviedb.org/3';
 const apiKey = 'b8dbbef293ad2709649b42f3f365336d';
 
 export const endpoints = {
-	getMovies: {
+	getInitialMovieList: {
 		method: 'GET',
 		path: '/discover/movie',
 		params: {
 			with_original_language: 'en'
 		}
+	},
+	searchMovies: {
+		method: 'GET',
+		path: '/search/movie'
 	}
 };
 
