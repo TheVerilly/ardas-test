@@ -2,11 +2,12 @@ import React from 'react';
 import Poster from './Poster';
 import WrappLink from './WrappLink';
 import Rating from './Rating';
+import '../assets/css/movie-card.css';
 
 function MovieCard(props) {
 	function limitOverview(string) {
 		const limit = 15;
-		return `${string.split(' ').filter((item, index) => index < limit).join(' ')}...`
+		return `${string.split(' ').filter((item, index) => index < limit).join(' ')}...`;
 	};
 	return (
 		<div className="movie-card">
