@@ -14,9 +14,8 @@ body {
 	color: #212529;
 }
 
-.main {
-	background-color: var(--main-background);
-	padding: 10px;
+main {
+	margin-top: 55px;
 }
 
 input {
