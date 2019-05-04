@@ -11,6 +11,7 @@ function MovieList(props) {
 					overview={item.overview}
 					release_date={item.release_date}
 					poster_path={item.poster_path}
+					rating={item.vote_average}
 				/>
 			})}
 		</div>

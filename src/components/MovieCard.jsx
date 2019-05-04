@@ -1,6 +1,7 @@
 import React from 'react';
 import Poster from './Poster';
-import WrappLink from './WrappLink'
+import WrappLink from './WrappLink';
+import Rating from './Rating';
 
 function MovieCard(props) {
 	function limitOverview(string) {
@@ -15,12 +16,16 @@ function MovieCard(props) {
 				<WrappLink
 					icon="search"
 					path="/movie-info"
-					class="btn-movie-more"
+					class="details__btn-movie-more"
 					state={{
 						overview: props.overview,
 						releaseDate: props.release_date,
 					}}
 				/>
+				<div className="details__metadata">
+					<span>Release date: {props.release_date}</span>
+					<Rating value={props.rating}/>
+				</div>
 				<p className="details__overview">{limitOverview(props.overview)}</p>
 			</div>
 		</div>
