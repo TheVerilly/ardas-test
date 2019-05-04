@@ -1,6 +1,12 @@
 import {connect} from 'react-redux';
 import MovieList from '../components/MovieList';
 
-const movieListContainer = connect();
+function mapStateToProps(state) {
+	return {
+		movieList: state.movie
+	};
+};
+
+const movieListContainer = connect(mapStateToProps);
 
 export default movieListContainer(MovieList);

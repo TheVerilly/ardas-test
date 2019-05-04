@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,900&subset=cyrillic,cyrillic-ext');
+
+:root {
+	--main-background: #F8FAFB;
+}
+
+body {
+	font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: var(--main-background);
+	color: #212529;
+}
+
+.app {
+	background-color: var(--main-background);
+	padding: 10px;
+}
+
+.wrapp-movie-card {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+}
+
+.movie-card {
+	position: relative;
+	width: 342px;
+	background: white;
+	margin: 25px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+}
+
+.movie-card:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.18);
+}
+
+.movie-card__details {
+	position: relative;
+	padding: 10px;
+}
+
+.details__title {
+	font-size: 1.3em;
+	font-weight: 500;
+	color: #414345;
+}
+
+.details__overview {
+	letter-spacing: 1px;
+	color: #9FA7A9;
+}
+
+.btn-movie-more {
+	position: absolute;
+	right: 8px;
+	top: -35px;
+	padding: 15px;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-color: #ff3d49;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+
+.btn-movie-more .fas {
+	color: white;
+	font-size: 24px;
+}
+
+.btn-movie-more:hover,
+.btn-movie-more:active {
+	filter: brightness(120%);
+}
+
+.btn-movie-more:focus {
+	outline: none;
+}

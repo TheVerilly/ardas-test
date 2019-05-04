@@ -1,9 +1,12 @@
 import React from 'react';
 
-function MovieInfo() {
+function MovieInfo(props) {
 	return (
-		<div></div>
+		<div>
+			<p>{props.location.state.overview}</p>
+			<p>{props.location.state.releaseDate}</p>
+		</div>
 	);
-};
+}
 
 export default MovieInfo;

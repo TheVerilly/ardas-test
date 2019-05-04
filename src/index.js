@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
 import {BrowserRouter, Route} from 'react-router-dom';
+import 'reset-css';
 import App from './App';
 import MovieInfo from './components/MovieInfo'
 import {getMovies} from './store/actions';

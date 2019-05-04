@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Poster() {
+function Poster(props) {
+	function createUrl() {
+		const width = 'w342';
+		return `https://image.tmdb.org/t/p/${width}${props.url}`;
+	};
 	return (
-		<div></div>
+		<img src={createUrl()} alt={props.description} />
 	);
 };
 
