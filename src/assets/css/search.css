@@ -1,0 +1,42 @@
+.wrapp-search {
+	position: fixed;
+	top: 0;
+	display: grid;
+	grid-template-columns: 1fr 100px 80px;
+	grid-column-gap: 20px;
+	width: 100%;
+	z-index: 2;
+	background-color: #24292e;
+	padding: 8px 5px;
+	box-sizing: border-box;
+	box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+}
+
+.btn-search {
+	display: inline-block;
+	line-height: 1;
+	cursor: pointer;
+	border: 1px solid #dcdfe6;
+	text-align: center;
+	margin: 0;
+	transition: .1s;
+	font-weight: 500;
+	padding: 12px 20px;
+	font-size: 14px;
+	border-radius: 4px;
+	color: #fff;
+	outline: 0;
+}
+
+.btn-search:hover,
+.btn-search:active {
+	filter: brightness(120%);
+}
+
+.btn-search--primary {
+	background-color: #0091a9;
+}
+
+.btn-search--reset {
+	background-color: #f78989;
+}

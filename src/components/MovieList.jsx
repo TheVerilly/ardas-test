@@ -1,9 +1,10 @@
 import React from 'react';
-import MovieCard from './MovieCard'
+import MovieCard from './MovieCard';
+import '../assets/css/movie-list.css';
 
 function MovieList(props) {
 	return (
-		<div className="wrapp-movie-card">
+		<div className="movie-list">
 			{props.movieList.map((item, index) => {
 				return <MovieCard
 					key={index}
@@ -15,7 +16,7 @@ function MovieList(props) {
 				/>
 			})}
 		</div>
-	)
-}
+	);
+};
 
 export default MovieList;

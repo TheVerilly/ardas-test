@@ -4,12 +4,12 @@ import Icon from './Icon';
 
 function WrappLink(props) {
 	return (
-		<button className={props.class}>
-			<Link to={{pathname: props.path, state: props.state}}>
+		<Link to={{pathname: props.path, state: props.state}}>
+			<button className={props.class}>
 				{props.title ? <span>{props.title}</span> : <Icon name={props.icon} />}
-			</Link>
-		</button>
+			</button>
+		</Link>
 	);
-}
+};
 
 export default WrappLink;

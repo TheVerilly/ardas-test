@@ -2,6 +2,7 @@
 
 :root {
 	--main-background: #F8FAFB;
+	--blue: #0bb5d0;
 }
 
 body {
@@ -13,13 +14,26 @@ body {
 	color: #212529;
 }
 
-.app {
+.main {
 	background-color: var(--main-background);
 	padding: 10px;
 }
 
-.wrapp-movie-card {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+input {
+	outline: none;
+	border: 1px solid #b3b3b3;
+	border-radius: 4px;
+	color: #000;
+	background-color: #fff;
+	transition: border-color .3s;
+	box-sizing: border-box;
+	cursor: text;
+	padding: 5px;
+	font-size: 1.2em;
+}
+input:focus {
+	border-color: var(--blue);
+}
+::placeholder {
+	color: #b6b6b6;
 }

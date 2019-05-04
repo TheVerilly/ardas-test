@@ -1,0 +1,14 @@
+.movie-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.movie-info__content {
+	background: white;
+	width: 600px;
+	border: 1px solid var(--blue);
+	border-radius: 5px;
+}

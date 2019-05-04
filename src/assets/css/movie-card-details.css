@@ -1,0 +1,25 @@
+.movie-card__details {
+	padding: 10px 13px;
+	padding-top: 20px;
+	color: #9FA7A9;
+}
+
+.details__title {
+	font-size: 1.4em;
+	font-weight: 500;
+	color: #414345;
+}
+
+.details__overview {
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+.details__metadata {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+	margin: 3px 0;
+}
