@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../assets/css/search.css';
 
 function Search(props) {
@@ -14,6 +15,13 @@ function Search(props) {
 			<button onClick={props.onReset} className="btn-search btn-search--reset">Reset</button>
 		</div>
 	);
+};
+
+Search.propTypes = {
+	value: PropTypes.string,
+	onSearch: PropTypes.func,
+	onReset: PropTypes.func,
+	onTyping: PropTypes.func
 };
 
 export default Search;

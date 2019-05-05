@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import Icon from './Icon';
+import PropTypes from 'prop-types';
 
 function WrappLink(props) {
 	return (
@@ -10,6 +11,12 @@ function WrappLink(props) {
 			</button>
 		</Link>
 	);
+};
+
+WrappLink.propTypes = {
+	state: PropTypes.object,
+	title: PropTypes.string,
+	class: PropTypes.string
 };
 
 export default WrappLink;

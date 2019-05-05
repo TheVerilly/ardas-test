@@ -1,6 +1,7 @@
 import React from 'react';
-import '../assets/css/movie-info.css';
 import MovieCardDetails from './MovieCardDetails'
+import PropTypes from 'prop-types';
+import '../assets/css/movie-info.css';
 
 function MovieInfo(props) {
 	return (
@@ -11,5 +12,9 @@ function MovieInfo(props) {
 		</div>
 	);
 }
+
+MovieInfo.propTypes = {
+	location: PropTypes.object
+};
 
 export default MovieInfo;

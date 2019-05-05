@@ -1,5 +1,6 @@
 import React from 'react';
 import Rating from './Rating';
+import PropTypes from 'prop-types';
 import '../assets/css/movie-card-details.css';
 
 function MovieCardDetails(props) {
@@ -21,5 +22,13 @@ function MovieCardDetails(props) {
 		</div>
 	);
 };
+
+MovieCardDetails.propTypes = {
+	shortDescription: PropTypes.bool,
+	title: PropTypes.string,
+	releaseDate: PropTypes.string,
+	rating: PropTypes.number,
+	overview: PropTypes.string
+}
 
 export default MovieCardDetails;

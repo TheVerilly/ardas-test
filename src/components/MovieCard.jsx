@@ -2,6 +2,7 @@ import React from 'react';
 import Poster from './Poster';
 import MovieCardDetails from './MovieCardDetails'
 import WrappLink from './WrappLink';
+import PropTypes from 'prop-types';
 
 import '../assets/css/movie-card.css';
 
@@ -26,6 +27,13 @@ function MovieCard(props) {
 			</div>
 		</div>
 	)
+};
+
+MovieCard.propTypes = {
+	title: PropTypes.string,
+	release_date: PropTypes.string,
+	rating: PropTypes.number,
+	overview: PropTypes.string,
 };
 
 export default MovieCard;

@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
+import PropTypes from 'prop-types';
 import '../assets/css/movie-list.css';
 
 function MovieList(props) {
@@ -28,6 +29,13 @@ function MovieList(props) {
 			}
 		</div>
 	);
+};
+
+MovieList.propTypes = {
+	movieList: PropTypes.array,
+	onScroll: PropTypes.func,
+	nextPage: PropTypes.number,
+	searchFieldValue: PropTypes.string
 };
 
 export default MovieList;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Poster(props) {
 	function createUrl() {
@@ -8,6 +9,11 @@ function Poster(props) {
 	return (
 		<img src={createUrl()} alt={props.description} />
 	);
+};
+
+Poster.propTypes = {
+	url: PropTypes.string,
+	description: PropTypes.string
 };
 
 export default Poster;
