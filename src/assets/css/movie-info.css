@@ -4,6 +4,7 @@
 	align-items: center;
 	height: 100vh;
 	width: 100%;
+	background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
 
 .movie-info__content {
