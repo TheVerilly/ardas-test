@@ -6,7 +6,9 @@ import '../assets/css/movie-list.css';
 function MovieList(props) {
 	function handleScroll(event) {
 		let element = event.target;
-		if (element.scrollHeight - Math.round(element.scrollTop) === element.clientHeight) {
+		const bottomCompensation = 100;
+		const scrollPosition = element.scrollHeight - Math.round(element.scrollTop);
+		if (scrollPosition - bottomCompensation < element.clientHeight) {
 			props.onScroll(props.nextPage, props.searchFieldValue);
 		};
 	}
